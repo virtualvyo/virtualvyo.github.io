@@ -1,51 +1,1189 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Virtual Vyo – Experience Space</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 40px;
-      background: #ffffff;
-      color: #0b1f3a;
-    }
-    h1 { margin-bottom: 10px; }
-    .tagline { color: #c79a2b; }
-    .section { margin-top: 40px; }
-    a { color: #0b1f3a; text-decoration: none; }
-  </style>
+	<title></title>
+	<meta content="summary_large_image" name="twitter:card" />
+	<meta content="website" property="og:type" />
+	<meta content="" property="og:description" />
+	<meta content="" property="og:url" />
+	<meta content="images/1_13853645_large.jpg" property="og:image" />
+	<meta content="" property="og:title" />
+	<meta content="" name="description" />
+	<meta charset="utf-8" />
+	<meta content="width=device-width" name="viewport" />
+	<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css" />
+	<style>
+		.bee-row,
+		.bee-row-content {
+			position: relative
+		}
+
+		body {
+			background-color: #ffffff;
+			color: #000000;
+			font-family: Fira Sans, Lucida Sans Unicode, Lucida Grande, sans-serif
+		}
+
+		.bee-page-container {
+			background-image: url("images/2_bg_real_estate.png");
+			background-position: top center;
+			background-size: auto;
+			background-repeat: repeat
+		}
+
+		a {
+			color: #7747FF
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		body,
+		h1,
+		h2,
+		h3,
+		p {
+			margin: 0
+		}
+
+		.bee-row-content {
+			max-width: 1370px;
+			margin: 0 auto;
+			display: flex
+		}
+
+		.bee-row-content .bee-col-w2 {
+			flex-basis: 16.6666666667%
+		}
+
+		.bee-row-content .bee-col-w3 {
+			flex-basis: 25%
+		}
+
+		.bee-row-content .bee-col-w4 {
+			flex-basis: 33.3333333333%
+		}
+
+		.bee-row-content .bee-col-w5 {
+			flex-basis: 41.6666666667%
+		}
+
+		.bee-row-content .bee-col-w6 {
+			flex-basis: 50%
+		}
+
+		.bee-row-content .bee-col-w7 {
+			flex-basis: 58.3333333333%
+		}
+
+		.bee-row-content .bee-col-w9 {
+			flex-basis: 75%
+		}
+
+		.bee-row-content .bee-col-w12 {
+			flex-basis: 100%
+		}
+
+		.bee-button a,
+		.bee-icon .bee-icon-label-right a {
+			text-decoration: none
+		}
+
+		.bee-button-content,
+		.bee-row-15 .bee-col-1 .bee-block-2 {
+			text-align: center
+		}
+
+		.bee-image {
+			overflow: auto
+		}
+
+		.bee-image .bee-center {
+			margin: 0 auto
+		}
+
+		.bee-row-10 .bee-col-1 .bee-block-1,
+		.bee-row-12 .bee-col-1 .bee-block-1,
+		.bee-row-14 .bee-col-1 .bee-block-1,
+		.bee-row-15 .bee-col-1 .bee-block-2 .bee-form-row:not(.bee-sidelabel) input:not([type=checkbox]):not([type=radio]),
+		.bee-row-3 .bee-col-1 .bee-block-3,
+		.bee-row-3 .bee-col-2 .bee-block-1,
+		.bee-row-6 .bee-col-1 .bee-block-1,
+		.bee-row-9 .bee-col-1 .bee-block-1,
+		.bee-row-9 .bee-col-2 .bee-block-1,
+		.bee-row-9 .bee-col-3 .bee-block-1 {
+			width: 100%
+		}
+
+		.bee-form .bee-form-row .bee-field {
+			padding: 3px;
+			display: flex;
+			flex: 1;
+			flex-wrap: wrap;
+			align-items: center
+		}
+
+		.bee-form .bee-form-row .bee-field input:not([type=checkbox]):not([type=radio]),
+		.bee-form .bee-form-row .bee-field textarea {
+			flex-grow: 1;
+			font-family: inherit;
+			font-size: inherit
+		}
+
+		.bee-form .bee-form-row .bee-field button {
+			font-family: inherit;
+			font-size: inherit;
+			cursor: pointer
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-2 h1,
+		.bee-row-4 .bee-col-1 .bee-block-1 h2 {
+			direction: ltr;
+			font-family: Fira Sans, Lucida Sans Unicode, Lucida Grande, sans-serif;
+			font-weight: 700
+		}
+
+		.bee-form .bee-form-row .bee-field .bee-button-container {
+			flex-grow: 1
+		}
+
+		.bee-row-1 .bee-row-content,
+		.bee-row-11 .bee-row-content,
+		.bee-row-13 .bee-row-content,
+		.bee-row-16 .bee-row-content,
+		.bee-row-18 .bee-row-content,
+		.bee-row-2 .bee-row-content,
+		.bee-row-4 .bee-row-content,
+		.bee-row-5 .bee-row-content,
+		.bee-row-6 .bee-row-content,
+		.bee-row-7 .bee-row-content,
+		.bee-row-8 .bee-row-content,
+		.bee-row-9 .bee-row-content {
+			border-radius: 0;
+			background-repeat: no-repeat;
+			color: #000000
+		}
+
+		.bee-icon {
+			display: inline-block;
+			vertical-align: middle
+		}
+
+		.bee-icon .bee-content {
+			display: flex;
+			align-items: center
+		}
+
+		.bee-image img {
+			display: block;
+			width: 100%
+		}
+
+		.bee-paragraph {
+			overflow-wrap: anywhere
+		}
+
+		.bee-social .icon img {
+			max-height: 32px
+		}
+
+		.bee-row-1,
+		.bee-row-11,
+		.bee-row-13,
+		.bee-row-15,
+		.bee-row-16,
+		.bee-row-17,
+		.bee-row-18,
+		.bee-row-2,
+		.bee-row-5,
+		.bee-row-7,
+		.bee-row-8,
+		.bee-row-9 {
+			background-repeat: no-repeat
+		}
+
+		.bee-row-1 .bee-row-content {
+			border-bottom: 2px solid #000000
+		}
+
+		.bee-row-10 .bee-row-content,
+		.bee-row-12 .bee-row-content,
+		.bee-row-14 .bee-row-content,
+		.bee-row-6 .bee-col-1,
+		.bee-row-9 .bee-col-1,
+		.bee-row-9 .bee-col-2,
+		.bee-row-9 .bee-col-3 {
+			border-bottom: 1px solid #000000;
+			border-left: 1px solid #000000;
+			border-right: 1px solid #000000;
+			border-top: 1px solid #000000
+		}
+
+		.bee-row-1 .bee-col-1 {
+			padding: 20px 10px 20px 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-1,
+		.bee-row-17 .bee-col-1 .bee-block-1 {
+			padding: 10px;
+			width: 100%
+		}
+
+		.bee-row-1 .bee-col-2 {
+			padding-bottom: 20px;
+			padding-left: 10px;
+			padding-top: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center
+		}
+
+		.bee-row-11 .bee-col-1,
+		.bee-row-13 .bee-col-1,
+		.bee-row-15 .bee-col-1,
+		.bee-row-16 .bee-col-1,
+		.bee-row-17 .bee-col-1,
+		.bee-row-17 .bee-col-2,
+		.bee-row-17 .bee-col-3,
+		.bee-row-17 .bee-col-4,
+		.bee-row-18 .bee-col-1,
+		.bee-row-19 .bee-col-1,
+		.bee-row-2 .bee-col-1,
+		.bee-row-3 .bee-col-1,
+		.bee-row-3 .bee-col-2,
+		.bee-row-5 .bee-col-1,
+		.bee-row-7 .bee-col-1 {
+			padding-bottom: 5px;
+			padding-top: 5px
+		}
+
+		.bee-row-10,
+		.bee-row-12,
+		.bee-row-14,
+		.bee-row-3 {
+			background-repeat: no-repeat;
+			background-size: auto
+		}
+
+		.bee-row-3 .bee-row-content {
+			background-repeat: no-repeat;
+			background-size: auto;
+			color: #000000;
+			padding-bottom: 45px;
+			padding-top: 15px
+		}
+
+		.bee-row-10 .bee-col-2 .bee-block-1,
+		.bee-row-12 .bee-col-2 .bee-block-1,
+		.bee-row-14 .bee-col-2 .bee-block-1,
+		.bee-row-3 .bee-col-1 .bee-block-2,
+		.bee-row-4 .bee-col-1 .bee-block-1,
+		.bee-row-6 .bee-col-2 .bee-block-1,
+		.bee-row-8 .bee-col-2 .bee-block-1,
+		.bee-row-9 .bee-col-1 .bee-block-3,
+		.bee-row-9 .bee-col-2 .bee-block-3,
+		.bee-row-9 .bee-col-3 .bee-block-3 {
+			padding: 10px;
+			text-align: center;
+			width: 100%
+		}
+
+		.bee-row-4 {
+			background-color: #000000;
+			background-repeat: no-repeat
+		}
+
+		.bee-row-4 .bee-row-content,
+		.bee-row-8 .bee-row-content {
+			padding-bottom: 20px;
+			padding-top: 20px
+		}
+
+		.bee-row-4 .bee-col-1,
+		.bee-row-4 .bee-col-2,
+		.bee-row-4 .bee-col-3,
+		.bee-row-4 .bee-col-4 {
+			padding: 5px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center
+		}
+
+		.bee-row-10 .bee-col-2 .bee-block-2,
+		.bee-row-12 .bee-col-2 .bee-block-2,
+		.bee-row-14 .bee-col-2 .bee-block-2,
+		.bee-row-17 .bee-col-3 .bee-block-1,
+		.bee-row-4 .bee-col-1 .bee-block-2,
+		.bee-row-8 .bee-col-1 .bee-block-1,
+		.bee-row-9 .bee-col-1 .bee-block-4,
+		.bee-row-9 .bee-col-2 .bee-block-4,
+		.bee-row-9 .bee-col-3 .bee-block-4 {
+			padding: 10px
+		}
+
+		.bee-row-4 .bee-col-2 .bee-block-1,
+		.bee-row-4 .bee-col-3 .bee-block-1,
+		.bee-row-4 .bee-col-4 .bee-block-1 {
+			padding-left: 10px;
+			padding-right: 10px;
+			padding-top: 10px;
+			text-align: center;
+			width: 100%
+		}
+
+		.bee-row-6 {
+			background-image: url('images/3_bg_spaces.png');
+			background-repeat: no-repeat;
+			background-size: auto
+		}
+
+		.bee-row-6 .bee-row-content {
+			background-size: auto
+		}
+
+		.bee-row-6 .bee-col-1 {
+			background-color: #ffffff;
+			display: flex;
+			flex-direction: column;
+			justify-content: center
+		}
+
+		.bee-row-6 .bee-col-1 .bee-block-3 {
+			padding: 15px 10px
+		}
+
+		.bee-row-6 .bee-col-2,
+		.bee-row-8 .bee-col-1,
+		.bee-row-8 .bee-col-2 {
+			padding-bottom: 5px;
+			padding-top: 5px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center
+		}
+
+		.bee-row-6 .bee-col-2 .bee-block-2 {
+			padding: 10px 10px 30px
+		}
+
+		.bee-row-6 .bee-col-2 .bee-block-3,
+		.bee-row-9 .bee-col-1 .bee-block-5,
+		.bee-row-9 .bee-col-2 .bee-block-5,
+		.bee-row-9 .bee-col-3 .bee-block-5 {
+			padding: 10px;
+			text-align: left
+		}
+
+		.bee-row-9 .bee-row-content {
+			padding-bottom: 30px
+		}
+
+		.bee-row-9 .bee-col-1,
+		.bee-row-9 .bee-col-2,
+		.bee-row-9 .bee-col-3 {
+			padding-bottom: 5px
+		}
+
+		.bee-row-10 .bee-row-content,
+		.bee-row-12 .bee-row-content,
+		.bee-row-14 .bee-row-content {
+			background-color: #ffffff;
+			background-repeat: no-repeat;
+			background-size: auto;
+			border-radius: 0;
+			color: #000000
+		}
+
+		.bee-row-10 .bee-col-1,
+		.bee-row-12 .bee-col-1,
+		.bee-row-14 .bee-col-1 {
+			display: flex;
+			flex-direction: column;
+			justify-content: center
+		}
+
+		.bee-row-10 .bee-col-2,
+		.bee-row-12 .bee-col-2,
+		.bee-row-14 .bee-col-2 {
+			border-bottom: 0 solid #140231;
+			border-left: 0 solid #140231;
+			border-right: 0px solid #efefef;
+			border-top: 0 solid #140231;
+			padding: 15px 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center
+		}
+
+		.bee-row-17 .bee-row-content,
+		.bee-row-6 .bee-col-2 .bee-block-3 a {
+			border-left: 1px solid #000000;
+			border-right: 1px solid #000000;
+			border-top: 1px solid #000000
+		}
+
+		.bee-row-15 .bee-row-content {
+			background-color: #000000;
+			background-repeat: no-repeat;
+			border-radius: 0 0 13px 13px;
+			color: #000000
+		}
+
+		.bee-row-15 .bee-col-1 .bee-block-1 {
+			padding: 30px 10px 30px 20px;
+			text-align: center;
+			width: 100%
+		}
+
+		.bee-row-15 .bee-col-1 .bee-block-2 {
+			font-family: inherit;
+			font-size: 16px;
+			font-weight: 400;
+			padding: 10px
+		}
+
+		.bee-row-17 .bee-row-content {
+			background-repeat: no-repeat;
+			border-bottom: 1px solid #000000;
+			border-radius: 0;
+			color: #000000;
+			padding: 10px
+		}
+
+		.bee-row-17 .bee-col-3 .bee-block-2 {
+			padding: 40px 10px;
+			text-align: left
+		}
+
+		.bee-row-19 {
+			background-color: #ffffff;
+			background-repeat: no-repeat
+		}
+
+		.bee-row-19 .bee-row-content {
+			background-color: #ffffff;
+			background-repeat: no-repeat;
+			color: #000000
+		}
+
+		.bee-row-19 .bee-col-1 .bee-block-1 {
+			color: #1e0e4b;
+			font-family: Inter, sans-serif;
+			font-size: 15px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			text-align: center
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-2 h1 {
+			color: #000000;
+			font-size: 60px;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: left
+		}
+
+		.bee-row-4 .bee-col-1 .bee-block-1 h2 {
+			color: #ffffff;
+			font-size: 32px;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: left
+		}
+
+		.bee-row-4 .bee-col-2 .bee-block-1 h2,
+		.bee-row-4 .bee-col-3 .bee-block-1 h2,
+		.bee-row-4 .bee-col-4 .bee-block-1 h2 {
+			font-weight: 900;
+			color: #ffffff;
+			font-family: Fira Sans, Lucida Sans Unicode, Lucida Grande, sans-serif;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: left;
+			direction: ltr
+		}
+
+		.bee-row-4 .bee-col-2 .bee-block-1 h2 {
+			font-size: 31px
+		}
+
+		.bee-row-4 .bee-col-3 .bee-block-1 h2,
+		.bee-row-4 .bee-col-4 .bee-block-1 h2 {
+			font-size: 32px
+		}
+
+		.bee-row-4 .bee-col-1 .bee-block-2 {
+			color: #ffffff;
+			direction: ltr;
+			font-family: "Fira Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			font-size: 24px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 120%;
+			text-align: left
+		}
+
+		.bee-row-10 .bee-col-2 .bee-block-2 a,
+		.bee-row-12 .bee-col-2 .bee-block-2 a,
+		.bee-row-14 .bee-col-2 .bee-block-2 a,
+		.bee-row-17 .bee-col-3 .bee-block-1 a,
+		.bee-row-4 .bee-col-1 .bee-block-2 a,
+		.bee-row-6 .bee-col-1 .bee-block-3 a,
+		.bee-row-6 .bee-col-2 .bee-block-2 a,
+		.bee-row-8 .bee-col-1 .bee-block-1 a,
+		.bee-row-9 .bee-col-1 .bee-block-4 a,
+		.bee-row-9 .bee-col-2 .bee-block-4 a,
+		.bee-row-9 .bee-col-3 .bee-block-4 a {
+			color: #8a3b8f
+		}
+
+		.bee-row-17 .bee-col-3 .bee-block-1 p:not(:last-child),
+		.bee-row-4 .bee-col-1 .bee-block-2 p:not(:last-child),
+		.bee-row-6 .bee-col-1 .bee-block-3 p:not(:last-child),
+		.bee-row-6 .bee-col-2 .bee-block-2 p:not(:last-child),
+		.bee-row-8 .bee-col-1 .bee-block-1 p:not(:last-child),
+		.bee-row-9 .bee-col-1 .bee-block-4 p:not(:last-child),
+		.bee-row-9 .bee-col-2 .bee-block-4 p:not(:last-child),
+		.bee-row-9 .bee-col-3 .bee-block-4 p:not(:last-child) {
+			margin-bottom: 16px
+		}
+
+		.bee-row-6 .bee-col-1 .bee-block-3 {
+			color: #000000;
+			direction: ltr;
+			font-size: 28px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 100%;
+			text-align: left
+		}
+
+		.bee-row-6 .bee-col-2 .bee-block-1 h2,
+		.bee-row-8 .bee-col-2 .bee-block-1 h2 {
+			color: #000000;
+			direction: ltr;
+			font-family: Fira Sans, Lucida Sans Unicode, Lucida Grande, sans-serif;
+			font-size: 50px;
+			font-weight: 700;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: left
+		}
+
+		.bee-row-6 .bee-col-2 .bee-block-2,
+		.bee-row-8 .bee-col-1 .bee-block-1 {
+			color: #000000;
+			direction: ltr;
+			font-size: 24px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 150%;
+			text-align: left
+		}
+
+		.bee-row-6 .bee-col-2 .bee-block-3 a {
+			background-color: #ffffff;
+			border-bottom: 3px solid #000000;
+			border-radius: 60px;
+			color: #000000;
+			direction: ltr;
+			font-family: inherit;
+			font-size: 18px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 200%;
+			padding: 5px 20px;
+			width: auto
+		}
+
+		.bee-row-17 .bee-col-3 .bee-block-1,
+		.bee-row-9 .bee-col-1 .bee-block-4,
+		.bee-row-9 .bee-col-2 .bee-block-4,
+		.bee-row-9 .bee-col-3 .bee-block-4 {
+			color: #000000;
+			direction: ltr;
+			font-family: "Fira Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			font-size: 21px;
+			font-weight: 300;
+			letter-spacing: 0;
+			line-height: 120%;
+			text-align: left
+		}
+
+		.bee-row-9 .bee-col-1 .bee-block-3 h3,
+		.bee-row-9 .bee-col-2 .bee-block-3 h3,
+		.bee-row-9 .bee-col-3 .bee-block-3 h3 {
+			color: #000000;
+			direction: ltr;
+			font-family: Fira Sans, Lucida Sans Unicode, Lucida Grande, sans-serif;
+			font-size: 22px;
+			font-weight: 700;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: left
+		}
+
+		.bee-row-9 .bee-col-1 .bee-block-5 a,
+		.bee-row-9 .bee-col-2 .bee-block-5 a,
+		.bee-row-9 .bee-col-3 .bee-block-5 a {
+			border-bottom: 3px solid #000000;
+			border-left: 1px solid #000000;
+			border-radius: 60px;
+			border-right: 1px solid #000000;
+			border-top: 1px solid #000000;
+			color: #000000;
+			direction: ltr;
+			font-family: inherit;
+			font-size: 18px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 200%;
+			padding: 5px 20px;
+			width: auto
+		}
+
+		.bee-row-10 .bee-col-2 .bee-block-1 h3,
+		.bee-row-12 .bee-col-2 .bee-block-1 h3,
+		.bee-row-14 .bee-col-2 .bee-block-1 h3 {
+			color: #000000;
+			direction: ltr;
+			font-family: Fira Sans, Lucida Sans Unicode, Lucida Grande, sans-serif;
+			font-size: 32px;
+			font-weight: 700;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: left
+		}
+
+		.bee-row-10 .bee-col-2 .bee-block-2,
+		.bee-row-12 .bee-col-2 .bee-block-2,
+		.bee-row-14 .bee-col-2 .bee-block-2 {
+			color: #000000;
+			direction: ltr;
+			font-family: "Fira Sans", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+			font-size: 24px;
+			font-weight: 300;
+			letter-spacing: 0;
+			line-height: 120%;
+			text-align: left
+		}
+
+		.bee-row-10 .bee-col-2 .bee-block-2 p:not(:last-child),
+		.bee-row-12 .bee-col-2 .bee-block-2 p:not(:last-child),
+		.bee-row-14 .bee-col-2 .bee-block-2 p:not(:last-child) {
+			margin-bottom: 17px
+		}
+
+		.bee-row-15 .bee-col-1 .bee-block-1 h2 {
+			color: #ffffff;
+			direction: ltr;
+			font-family: Fira Sans, Lucida Sans Unicode, Lucida Grande, sans-serif;
+			font-size: 50px;
+			font-weight: 700;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: left
+		}
+
+		@media (max-width:768px) {
+			.bee-form form {
+				width: 100% !important
+			}
+
+			img.bee-fullwidthOnMobile {
+				max-width: none !important
+			}
+
+			.bee-row-content:not(.no_stack) {
+				display: block
+			}
+
+			.bee-row-1 .bee-col-1,
+			.bee-row-1 .bee-col-2 {
+				padding: 10px 20px !important
+			}
+
+			.bee-row-10 .bee-col-1,
+			.bee-row-12 .bee-col-1,
+			.bee-row-14 .bee-col-1,
+			.bee-row-9 .bee-col-1,
+			.bee-row-9 .bee-col-2 {
+				padding: 0 !important
+			}
+
+			.bee-row-10 .bee-col-2,
+			.bee-row-12 .bee-col-2,
+			.bee-row-14 .bee-col-2 {
+				padding: 20px 10px !important
+			}
+
+			.bee-row-6 .bee-col-1,
+			.bee-row-9 .bee-col-1,
+			.bee-row-9 .bee-col-2 {
+				margin-bottom: 10px !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-1 {
+				height: 15px !important
+			}
+
+			.bee-row-3 .bee-col-1 .bee-block-1 {
+				height: 1px !important
+			}
+
+			.bee-row-1 .bee-col-1 .bee-block-1 img,
+			.bee-row-10 .bee-col-1 .bee-block-1 img,
+			.bee-row-12 .bee-col-1 .bee-block-1 img,
+			.bee-row-14 .bee-col-1 .bee-block-1 img {
+				float: none !important;
+				margin: 0 auto !important
+			}
+
+			.bee-row-3 .bee-col-1 .bee-block-2 {
+				text-align: left
+			}
+
+			.bee-row-3 .bee-col-1 .bee-block-2 h1 {
+				font-size: 42px;
+				text-align: left
+			}
+
+			.bee-row-10 .bee-col-2 .bee-block-2,
+			.bee-row-12 .bee-col-2 .bee-block-2,
+			.bee-row-14 .bee-col-2 .bee-block-2,
+			.bee-row-17 .bee-col-3 .bee-block-1,
+			.bee-row-4 .bee-col-1 .bee-block-2,
+			.bee-row-6 .bee-col-2 .bee-block-2,
+			.bee-row-8 .bee-col-1 .bee-block-1,
+			.bee-row-9 .bee-col-1 .bee-block-4,
+			.bee-row-9 .bee-col-2 .bee-block-4,
+			.bee-row-9 .bee-col-3 .bee-block-4 {
+				font-size: 16px !important
+			}
+
+			.bee-row-6 .bee-col-2 .bee-block-1 h2,
+			.bee-row-8 .bee-col-2 .bee-block-1 h2 {
+				font-size: 32px
+			}
+
+			.bee-row-7 .bee-col-1 .bee-block-1 {
+				height: 10px !important
+			}
+
+			.bee-row-10 .bee-col-2 .bee-block-1 h3,
+			.bee-row-12 .bee-col-2 .bee-block-1 h3,
+			.bee-row-14 .bee-col-2 .bee-block-1 h3,
+			.bee-row-9 .bee-col-1 .bee-block-3 h3,
+			.bee-row-9 .bee-col-2 .bee-block-3 h3,
+			.bee-row-9 .bee-col-3 .bee-block-3 h3 {
+				font-size: 24px
+			}
+
+			.bee-row-9 .bee-col-1 .bee-block-5,
+			.bee-row-9 .bee-col-2 .bee-block-5,
+			.bee-row-9 .bee-col-3 .bee-block-5 {
+				padding: 10px 10px 10px 0 !important;
+				text-align: left !important
+			}
+
+			.bee-row-9 .bee-col-1 .bee-block-5 .bee-button-content,
+			.bee-row-9 .bee-col-2 .bee-block-5 .bee-button-content,
+			.bee-row-9 .bee-col-3 .bee-block-5 .bee-button-content {
+				text-align: center !important
+			}
+
+			.bee-row-15 .bee-col-1 .bee-block-1 h2 {
+				font-size: 33px
+			}
+		}
+
+		.bee-row-19 .bee-col-1 .bee-block-1 .bee-icon-image {
+			padding: 5px 6px 5px 5px
+		}
+
+		.bee-row-19 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content {
+			margin-left: 0
+		}
+
+		.bee-row-19 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-19 .bee-col-1 .bee-block-1 .bee-icon-label a {
+			color: #1e0e4b
+		}
+
+		.bee-row-15 .bee-col-1 .bee-block-2 form {
+			display: inline-block;
+			width: 100%
+		}
+
+		.bee-row-15 .bee-col-1 .bee-block-2 ::-webkit-input-placeholder {
+			color: #000000
+		}
+
+		.bee-row-15 .bee-col-1 .bee-block-2 :-moz-placeholder {
+			color: #000000
+		}
+
+		.bee-row-15 .bee-col-1 .bee-block-2 ::-moz-placeholder {
+			color: #000000
+		}
+
+		.bee-row-15 .bee-col-1 .bee-block-2 :-ms-input-placeholder {
+			color: #000000
+		}
+
+		.bee-row-15 .bee-col-1 .bee-block-2 input:not([type=checkbox]):not([type=radio]):not([type=image]),
+		.bee-row-15 .bee-col-1 .bee-block-2 textarea {
+			background-color: #ffffff;
+			border-bottom: 6px solid #000000;
+			border-left: 6px solid #000000;
+			border-radius: 15px;
+			border-right: 6px solid #000000;
+			border-top: 6px solid #000000;
+			color: #000000;
+			padding: 10px 20px;
+			min-height: 52px
+		}
+
+		.bee-row-15 .bee-col-1 .bee-block-2 input:not([type=checkbox]):not([type=radio]):focus,
+		.bee-row-15 .bee-col-1 .bee-block-2 textarea:focus {
+			outline-color: transparent
+		}
+
+		.bee-row-15 .bee-col-1 .bee-block-2 button {
+			background-color: #ffffff;
+			border-bottom: 3px solid #c3bdbd;
+			border-left: 1px solid transparent;
+			border-radius: 60px;
+			border-right: 1px solid transparent;
+			border-top: 1px solid transparent;
+			color: #000000;
+			letter-spacing: normal;
+			line-height: 200%;
+			padding: 5px 20px;
+			width: auto
+		}
+
+		.bee-row-15 .bee-col-1 .bee-block-2 .bee-button-container {
+			padding-bottom: 40px;
+			padding-top: 20px;
+			text-align: center
+		}
+	</style>
 </head>
+
 <body>
-
-<h1>Virtual Vyo</h1>
-<p class="tagline">Experience Space.</p>
-
-<div class="section">
-  <h2>What We Do</h2>
-  <p>
-    Virtual Vyo provides professional 360° virtual walkthroughs and Google
-    Street View integrations for residential builders in Chennai.
-  </p>
-</div>
-
-<div class="section">
-  <h2>Why Virtual Vyo</h2>
-  <p>
-    We help small and mid-sized builders showcase their properties like
-    big-league projects—without expensive subscriptions.
-  </p>
-</div>
-
-<div class="section">
-  <h2>Contact</h2>
-  <p>
-    📞 <a href="https://wa.me/91XXXXXXXXXX">WhatsApp Us</a><br>
-    📍 Chennai, India
-  </p>
-</div>
-
+	<div class="bee-page-container">
+		<div class="bee-row bee-row-1">
+			<div class="bee-row-content no_stack">
+				<div class="bee-col bee-col-1 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-image"><a href="https://virtualvyo.github.io/" target="_blank"><img alt="Company logo" class="bee-fixedwidth bee-fullwidthOnMobile" src="images/4_Logo_zeroSpace.PNG" style="max-width:197px;" title="Company logo" /></a></div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w6"></div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-2">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:60px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-3">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w5">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:20px;"></div>
+					</div>
+					<div class="bee-block bee-block-2 bee-heading">
+						<h1>Sell Your Flats Faster with Virtual Walkthroughs </h1>
+					</div>
+					<div class="bee-block bee-block-3 bee-image"><a href="www.example.com" target="_blank"><img alt="a room with a desk and a computer" class="bee-center bee-fixedwidth bee-fullwidthOnMobile" src="images/5_office_desk.png" style="max-width:570px;" title="a room with a desk and a computer" /></a></div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w7">
+					<div class="bee-block bee-block-1 bee-image"><a href="www.example.com" target="_blank"><img alt="a room with a desk and a computer" class="bee-center bee-autowidth" src="images/6_office_1.png" style="max-width:719px;" title="a room with a desk and a computer" /></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-4">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-heading">
+						<h2>What We Do </h2>
+					</div>
+					<div class="bee-block bee-block-2 bee-paragraph">
+						<p>360° virtual tours and Google Street View integration that help buyers experience your property—without visiting the site</p>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-heading">
+						<h2>360° Walkthroughs </h2>
+					</div>
+				</div>
+				<div class="bee-col bee-col-3 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-heading">
+						<h2><span class="tinyMce-placeholder">Google Street View</span> </h2>
+					</div>
+				</div>
+				<div class="bee-col bee-col-4 bee-col-w2">
+					<div class="bee-block bee-block-1 bee-heading">
+						<h2>WhatsApp Sales Kits </h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-5">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:50px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-6">
+			<div class="bee-row-content" style="gap:10px;">
+				<div class="bee-col bee-col-1 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-image"><a href="www.Example.com" target="_blank"><img alt="a room with a table and chairs" class="bee-center bee-fixedwidth" src="images/7_office_space.png" style="max-width:678px;" title="a room with a table and chairs" /></a></div>
+					<div class="bee-block bee-block-2 bee-spacer">
+						<div class="spacer" style="height:1px;"></div>
+					</div>
+					<div class="bee-block bee-block-3 bee-paragraph">
+						<p>Tailored for Real Estate Builders</p>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-heading">
+						<h2><strong>Turn Properties into Digital Experiences</strong>  </h2>
+					</div>
+					<div class="bee-block bee-block-2 bee-paragraph">
+						<p>Let buyers explore every room, corner, and layout from their phone or laptop—anytime, anywhere.</p>
+					</div>
+					<div class="bee-block bee-block-3 bee-button"><a class="bee-button-content" href="mailto:virtualvyo@gmail.com?subject=Inquiry - Virtual Vyo&amp;body=" style="font-size: 18px; display: inline-block;" target="_blank"><span style="word-break: break-word; font-size: 18px; line-height: 200%; letter-spacing: normal;">Contact Us</span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-7">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:50px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-8">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w5">
+					<div class="bee-block bee-block-1 bee-paragraph">
+						<p>Large developers use expensive tools and subscriptions. We bring the same visual experience to small and mid-sized builders—with a simple one-time cost.</p>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w7">
+					<div class="bee-block bee-block-1 bee-heading">
+						<h2><strong>Big-Builder Technology,<br />Without Big-Builder Cost</strong> </h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-9">
+			<div class="bee-row-content" style="gap:10px;">
+				<div class="bee-col bee-col-1 bee-col-w4">
+					<div class="bee-block bee-block-1 bee-image"><a href="www.Example.com" target="_blank"><img alt="a glass building with a reflection of clouds in the windows" class="bee-center bee-fixedwidth" src="images/8_Office-2.png" style="max-width:448px;" title="a glass building with a reflection of clouds in the windows" /></a></div>
+					<div class="bee-block bee-block-2 bee-spacer">
+						<div class="spacer" style="height:20px;"></div>
+					</div>
+					<div class="bee-block bee-block-3 bee-heading">
+						<h3><strong>360° Virtual Walkthroughs</strong><br /> </h3>
+					</div>
+					<div class="bee-block bee-block-4 bee-paragraph">
+						<p>Interactive room-to-room tours that give buyers a true sense of space, flow, and layout.</p>
+					</div>
+					<div class="bee-block bee-block-5 bee-button"><a class="bee-button-content" href="mailto:virtualvyo@gmail.com?subject=Inquiry - Virtual Walkthrough" style="font-size: 18px; display: inline-block;" target="_blank"><span style="word-break: break-word; font-size: 18px; line-height: 200%; letter-spacing: normal;">Request demo</span></a></div>
+					<div class="bee-block bee-block-6 bee-spacer">
+						<div class="spacer" style="height:5px;"></div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w4">
+					<div class="bee-block bee-block-1 bee-image"><a href="www.Example.com" target="_blank"><img alt="Modern office" class="bee-center bee-fixedwidth" src="images/9_Office-3.png" style="max-width:448px;" title="Modern office" /></a></div>
+					<div class="bee-block bee-block-2 bee-spacer">
+						<div class="spacer" style="height:20px;"></div>
+					</div>
+					<div class="bee-block bee-block-3 bee-heading">
+						<h3><strong>Google Street View Integration</strong><br /> </h3>
+					</div>
+					<div class="bee-block bee-block-4 bee-paragraph">
+						<p>Publish professional interior views directly on your Google Maps to increase visibility and trust.</p>
+					</div>
+					<div class="bee-block bee-block-5 bee-button"><a class="bee-button-content" href="mailto:virtualvyo@gmail.com?subject=Inquiry - Google Street View&amp;body=" style="font-size: 18px; display: inline-block;" target="_blank"><span style="word-break: break-word; font-size: 18px; line-height: 200%; letter-spacing: normal;"> Request demo</span></a></div>
+				</div>
+				<div class="bee-col bee-col-3 bee-col-w4">
+					<div class="bee-block bee-block-1 bee-image"><a href="www.Example.com" target="_blank"><img alt="Modern office" class="bee-center bee-fixedwidth" src="images/10_buildings.png" style="max-width:448px;" title="Modern office" /></a></div>
+					<div class="bee-block bee-block-2 bee-spacer">
+						<div class="spacer" style="height:20px;"></div>
+					</div>
+					<div class="bee-block bee-block-3 bee-heading">
+						<h3><strong>WhatsApp-Ready Sales Kits</strong><br /> </h3>
+					</div>
+					<div class="bee-block bee-block-4 bee-paragraph">
+						<p>Share your property instantly with buyers using a simple link—no apps, no downloads.</p>
+					</div>
+					<div class="bee-block bee-block-5 bee-button"><a class="bee-button-content" href="mailto:virtualvyo@gmail.com?subject=Inquiry - Whatsapp Integration" style="font-size: 18px; display: inline-block;" target="_blank"><span style="word-break: break-word; font-size: 18px; line-height: 200%; letter-spacing: normal;"> Request demo</span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-10">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w3">
+					<div class="bee-block bee-block-1 bee-image"><a href="www.Example.com" target="_blank"><img alt="Working space" class="bee-fixedwidth bee-fullwidthOnMobile" src="images/11_Office_space_main.png" style="max-width:325px;" title="Working space" /></a></div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w9">
+					<div class="bee-block bee-block-1 bee-heading">
+						<h3><strong>Perfect for NRIs and Outstation Customers</strong> </h3>
+					</div>
+					<div class="bee-block bee-block-2 bee-paragraph">
+						<p>Help serious buyers make confident decisions remotely, reducing unnecessary site visits and follow-up calls.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-11">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:10px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-12">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w3">
+					<div class="bee-block bee-block-1 bee-image"><a href="www.Example.com" target="_blank"><img alt="Modern working space" class="bee-fixedwidth bee-fullwidthOnMobile" src="images/12_office_chair.png" style="max-width:325px;" title="Modern working space" /></a></div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w9">
+					<div class="bee-block bee-block-1 bee-heading">
+						<h3><strong>From Site to Screen in Days</strong> </h3>
+					</div>
+					<div class="bee-block bee-block-2 bee-paragraph">
+						<p>We handle capture, processing, and setup. You receive a ready-to-share digital experience that works seamlessly on mobile and desktop.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-13">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:10px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-14">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w3">
+					<div class="bee-block bee-block-1 bee-image"><a href="www.Example.com" target="_blank"><img alt="Working space" class="bee-fixedwidth bee-fullwidthOnMobile" src="images/13_ofiice-space.png" style="max-width:325px;" title="Working space" /></a></div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w9">
+					<div class="bee-block bee-block-1 bee-heading">
+						<h3><strong>Experience Space, Not Just Photos</strong>  </h3>
+					</div>
+					<div class="bee-block bee-block-2 bee-paragraph">
+						<p><strong>Experience Space, Not Just Photos</strong></p>
+						<p>Photos show rooms. Virtual walkthroughs show how spaces <em>feel</em>.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-15">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-heading">
+						<h2><strong>Ready to Showcase Your Property the Smart Way?</strong>  </h2>
+					</div>
+					<div class="bee-block bee-block-2 bee-form">
+						<form accept-charset="UTF-8" action="ACTION_PLACEHOLDER" autocomplete="on" enctype="multipart/form-data" method="post" target="_self">
+							<div class="bee-form-row">
+								<div class="bee-field bee-field-r14c0m1r1f1"><input id="r14c0m1r1f1" name="firstname" placeholder="Name" required="" type="text" /></div>
+							</div>
+							<div class="bee-form-row">
+								<div class="bee-field bee-field-r14c0m1r2f1"><input id="r14c0m1r2f1" name="email" placeholder="Email" required="" type="text" /></div>
+							</div>
+							<div class="bee-form-row">
+								<div class="bee-field bee-field-r14c0m1r3f1"><textarea id="r14c0m1r3f1" name="message" placeholder="Message" rows="10"></textarea></div>
+							</div>
+							<div class="bee-form-row">
+								<div class="bee-field bee-field-r14c0m1r4f1">
+									<div class="bee-button-container"><button id="r14c0m1r4f1" name="submit" type="submit" value="Get In Touch">Get In Touch</button></div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-16">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:50px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-17">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w3">
+					<div class="bee-block bee-block-1 bee-image"><a href="www.Example.com" target="_blank"><img alt="Company logo" class="bee-fixedwidth" src="images/4_Logo_zeroSpace.PNG" style="max-width:133px;" title="Company logo" /></a></div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w3"></div>
+				<div class="bee-col bee-col-3 bee-col-w3">
+					<div class="bee-block bee-block-1 bee-paragraph">
+						<p>Stay connected. Follow us on social media</p>
+					</div>
+					<div class="bee-block bee-block-2 bee-social">
+						<div class="content"><span class="icon" style="padding:0 10px 0 10px;"><a href="https://www.facebook.com/" target="_self"><img alt="facebook" src="images/14_facebook2x.png" title="facebook" /></a></span><span class="icon" style="padding:0 10px 0 10px;"><a href="https://www.twitter.com/" target="_self"><img alt="twitter" src="images/15_twitter2x.png" title="twitter" /></a></span><span class="icon" style="padding:0 10px 0 10px;"><a href="https://www.linkedin.com/" target="_self"><img alt="linkedin" src="images/16_linkedin2x.png" title="linkedin" /></a></span><span class="icon" style="padding:0 10px 0 10px;"><a href="https://www.instagram.com/" target="_self"><img alt="instagram" src="images/17_instagram2x.png" title="instagram" /></a></span></div>
+					</div>
+				</div>
+				<div class="bee-col bee-col-4 bee-col-w3"></div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-18">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-spacer">
+						<div class="spacer" style="height:50px;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-19">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-icons">
+						<div>
+							<div class="bee-icon bee-icon-last">
+								<div class="bee-content">
+									<div class="bee-icon-image"><a href="https://designedwithbeefree.com/" target="_blank" title="Designed with Beefree"><img alt="Beefree Logo" height="32px" src="images/18_Beefree-logo.png" width="auto" /></a></div>
+									<div class="bee-icon-label bee-icon-label-right"><a href="https://designedwithbeefree.com/" target="_blank" title="Designed with Beefree">Designed with Beefree</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
+
 </html>
