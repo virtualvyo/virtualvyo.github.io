@@ -1,2 +1,437 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title></title>
+	<meta content="summary_large_image" name="twitter:card" />
+	<meta content="website" property="og:type" />
+	<meta content="" property="og:description" />
+	<meta content="" property="og:url" />
+	<meta content="images/1_13882727_large.jpg" property="og:image" />
+	<meta content="" property="og:title" />
+	<meta content="" name="description" />
+	<meta charset="utf-8" />
+	<meta content="width=device-width" name="viewport" />
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css" />
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css" />
+	<style>
+		.bee-row,
+		.bee-row-content {
+			position: relative
+		}
+
+		.bee-row-4,
+		.bee-row-4 .bee-row-content {
+			background-size: auto
+		}
+
+		body {
+			background-color: #fdf7f0;
+			color: #000000;
+			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif
+		}
+
+		a {
+			color: #5d1627
+		}
+
+		* {
+			box-sizing: border-box
+		}
+
+		body,
+		h1,
+		h2,
+		p {
+			margin: 0
+		}
+
+		.bee-row-content {
+			max-width: 1440px;
+			margin: 0 auto;
+			display: flex
+		}
+
+		.bee-row-content .bee-col-w1 {
+			flex-basis: 8.3333333333%
+		}
+
+		.bee-row-content .bee-col-w6 {
+			flex-basis: 50%
+		}
+
+		.bee-row-content .bee-col-w11 {
+			flex-basis: 91.6666666667%
+		}
+
+		.bee-row-content .bee-col-w12 {
+			flex-basis: 100%
+		}
+
+		.bee-button a,
+		.bee-icon .bee-icon-label-right a {
+			text-decoration: none
+		}
+
+		.bee-button-content {
+			text-align: center
+		}
+
+		.bee-image {
+			overflow: auto
+		}
+
+		.bee-row-3 .bee-col-1 .bee-block-1 {
+			width: 100%
+		}
+
+		.bee-row-2 .bee-row-content,
+		.bee-row-3 .bee-row-content,
+		.bee-row-4 .bee-row-content {
+			border-radius: 0;
+			background-repeat: no-repeat;
+			color: #000000
+		}
+
+		.bee-icon {
+			display: inline-block;
+			vertical-align: middle
+		}
+
+		.bee-icon .bee-content {
+			display: flex;
+			align-items: center
+		}
+
+		.bee-image img {
+			display: block;
+			width: 100%
+		}
+
+		.bee-paragraph {
+			overflow-wrap: anywhere
+		}
+
+		.bee-row-1 {
+			background-color: #772438;
+			background-repeat: no-repeat
+		}
+
+		.bee-row-1 .bee-row-content {
+			background-color: #772438;
+			background-repeat: no-repeat;
+			color: #000000
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-1,
+		.bee-row-2 .bee-col-1 .bee-block-1,
+		.bee-row-4 .bee-col-1 .bee-block-2 {
+			padding: 10px
+		}
+
+		.bee-row-2,
+		.bee-row-3 {
+			background-repeat: no-repeat
+		}
+
+		.bee-row-2 .bee-row-content {
+			background-color: #fff5ea;
+			padding: 25px 40px
+		}
+
+		.bee-row-2 .bee-col-1,
+		.bee-row-2 .bee-col-2 {
+			padding-bottom: 5px;
+			padding-top: 5px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-2 {
+			padding: 5px;
+			text-align: center;
+			width: 100%
+		}
+
+		.bee-row-3 .bee-row-content {
+			background-color: #c15335
+		}
+
+		.bee-row-3 .bee-col-1 {
+			display: flex;
+			flex-direction: column;
+			justify-content: center
+		}
+
+		.bee-row-3 .bee-col-2 {
+			padding-left: 30px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center
+		}
+
+		.bee-row-4 {
+			background-repeat: no-repeat
+		}
+
+		.bee-row-4 .bee-col-1,
+		.bee-row-5 .bee-col-1 {
+			padding-bottom: 5px;
+			padding-top: 5px
+		}
+
+		.bee-row-4 .bee-col-1 .bee-block-1 {
+			padding: 10px;
+			text-align: center;
+			width: 100%
+		}
+
+		.bee-row-4 .bee-col-1 .bee-block-3 {
+			padding: 10px;
+			text-align: left
+		}
+
+		.bee-row-5 {
+			background-color: #ffffff;
+			background-repeat: no-repeat
+		}
+
+		.bee-row-5 .bee-row-content {
+			background-color: #ffffff;
+			background-repeat: no-repeat;
+			color: #000000
+		}
+
+		.bee-row-5 .bee-col-1 .bee-block-1 {
+			color: #1e0e4b;
+			font-family: Inter, sans-serif;
+			font-size: 15px;
+			padding-bottom: 5px;
+			padding-top: 5px;
+			text-align: center
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-1,
+		.bee-row-2 .bee-col-1 .bee-block-2 h1,
+		.bee-row-4 .bee-col-1 .bee-block-1 h2 {
+			font-family: "Playfair Display", Georgia, serif;
+			line-height: 120%;
+			direction: ltr
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-1 {
+			color: #ffffff;
+			direction: ltr;
+			font-size: 14px;
+			font-weight: 400;
+			letter-spacing: 1px;
+			line-height: 120%;
+			text-align: center
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-1 a,
+		.bee-row-4 .bee-col-1 .bee-block-2 a {
+			color: #ffffff
+		}
+
+		.bee-row-1 .bee-col-1 .bee-block-1 p:not(:last-child) {
+			margin-bottom: 15px
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-2 h1 {
+			color: #ea0037;
+			font-size: 70px;
+			font-weight: 500;
+			letter-spacing: normal;
+			text-align: left
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-1 {
+			color: #772438;
+			font-size: 30px;
+			font-weight: 400;
+			letter-spacing: 0;
+			text-align: left
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-1 a {
+			color: #772438
+		}
+
+		.bee-row-2 .bee-col-1 .bee-block-1 p:not(:last-child),
+		.bee-row-4 .bee-col-1 .bee-block-2 p:not(:last-child) {
+			margin-bottom: 16px
+		}
+
+		.bee-row-4 .bee-col-1 .bee-block-1 h2 {
+			color: #5d1627;
+			font-size: 33px;
+			font-weight: 400;
+			letter-spacing: normal;
+			text-align: left
+		}
+
+		.bee-row-5 .bee-col-1 .bee-block-1 .bee-icon-image {
+			padding: 5px 6px 5px 5px
+		}
+
+		.bee-row-5 .bee-col-1 .bee-block-1 .bee-icon:not(.bee-icon-first) .bee-content {
+			margin-left: 0
+		}
+
+		.bee-row-5 .bee-col-1 .bee-block-1 .bee-icon::not(.bee-icon-last) .bee-content {
+			margin-right: 0
+		}
+
+		.bee-row-5 .bee-col-1 .bee-block-1 .bee-icon-label a {
+			color: #1e0e4b
+		}
+
+		.bee-row-4 .bee-col-1 .bee-block-2 {
+			color: #5d1627;
+			direction: ltr;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 150%;
+			text-align: left
+		}
+
+		@media (max-width:768px) {
+			.bee-mobile_hide {
+				display: none
+			}
+
+			.bee-row-content:not(.no_stack) {
+				display: block
+			}
+
+			.bee-row-2 .bee-row-content {
+				padding: 25px 20px !important
+			}
+
+			.bee-row-3 .bee-col-2 {
+				padding: 20px !important
+			}
+
+			.bee-row-1 .bee-col-1 .bee-block-1 {
+				font-size: 14px !important
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-2 {
+				text-align: center
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-2 h1 {
+				font-size: 40px;
+				text-align: center
+			}
+
+			.bee-row-2 .bee-col-1 .bee-block-1 {
+				text-align: center !important
+			}
+
+			.bee-row-4 .bee-col-1 .bee-block-1 {
+				padding: 10px 0
+			}
+
+			.bee-row-4 .bee-col-1 .bee-block-2 {
+				padding: 10px 0 !important
+			}
+		}
+
+		.bee-row-4 .bee-col-1 .bee-block-3 a:hover {
+			background-color: #c15335 !important;
+			border-bottom: 1px solid #ffffff !important;
+			border-left: 1px solid #ffffff !important;
+			border-right: 1px solid #ffffff !important;
+			border-top: 1px solid #ffffff !important;
+			color: #ffffff !important
+		}
+
+		.bee-row-4 .bee-col-1 .bee-block-3 a {
+			background-color: #ffffff;
+			border-bottom: 1px solid transparent;
+			border-left: 1px solid transparent;
+			border-radius: 12px;
+			border-right: 1px solid transparent;
+			border-top: 1px solid transparent;
+			color: #772438;
+			direction: ltr;
+			font-family: inherit;
+			font-size: 16px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 200%;
+			padding: 10px 25px;
+			width: auto
+		}
+	</style>
+</head>
+
+<body>
+	<div class="bee-page-container">
+		<div class="bee-row bee-row-1">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-paragraph">
+						<p>Mesmerizing visuals ahead..</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-2">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w6">
+					<div class="bee-block bee-block-1 bee-paragraph">
+						<p><a href="https://www.example.com/" rel="noopener" style="text-decoration: none;" target="_blank">We</a>lcome to the</p>
+					</div>
+					<div class="bee-block bee-block-2 bee-heading">
+						<h1><span class="tinyMce-placeholder"><em>Virtual Tour of KOVUR HOME<br /></em></span> </h1>
+					</div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w6"></div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-3">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w11">
+					<div class="bee-block bee-block-1 bee-image bee-mobile_hide"><img alt="a plate of cheese and crackers" class="bee-autowidth" src="images/2_bundle-lp.jpg" style="max-width:866px;" title="friendsgiving bundle" /></div>
+				</div>
+				<div class="bee-col bee-col-2 bee-col-w1"></div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-4">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-heading">
+						<h2><span class="tinyMce-placeholder">Interested?</span> </h2>
+					</div>
+					<div class="bee-block bee-block-2 bee-paragraph">
+						<p>Feel free to contact the sales team for more information on this place.</p>
+					</div>
+					<div class="bee-block bee-block-3 bee-button"><a class="bee-button-content" href="https://www.example.com/" style="font-size: 16px; display: inline-block;" target="_blank"><span style="word-break: break-word; font-size: 16px; line-height: 200%; letter-spacing: normal;">Contact now</span></a></div>
+				</div>
+			</div>
+		</div>
+		<div class="bee-row bee-row-5">
+			<div class="bee-row-content">
+				<div class="bee-col bee-col-1 bee-col-w12">
+					<div class="bee-block bee-block-1 bee-icons">
+						<div>
+							<div class="bee-icon bee-icon-last">
+								<div class="bee-content">
+									<div class="bee-icon-image"><a href="https://designedwithbeefree.com/" target="_blank" title="Designed with Beefree"><img alt="Beefree Logo" height="32px" src="images/3_Beefree-logo.png" width="auto" /></a></div>
+									<div class="bee-icon-label bee-icon-label-right"><a href="https://designedwithbeefree.com/" target="_blank" title="Designed with Beefree">Designed with Beefree</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
 </html>
